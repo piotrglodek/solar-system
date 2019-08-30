@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,700&display=swap');
+*,
+*::after,
+*::before {
+ box-sizing: border-box;
+}
+
+body {
+ margin: 0;
+ font-family: 'Poppins', sans-serif;
+}
+
+:root {
+ --blue: #22a7f0;
+}
+
+.solar-system {
+ background: url('images/stardust.png') repeat;
+ width: 100vw;
+ height: 100vh;
+}
+
+.solar-system__container {
+ position: absolute;
+ top: 0;
+ left: 0;
+ padding: 16px;
+ z-index: 2;
+}
+
+.solar-system__name {
+ margin-top: 0;
+ margin-bottom: 10px;
+ font-size: 22px;
+ color: var(--blue);
+}
+
+.planet__container {
+ display: flex;
+ align-items: center;
+}
+
+.planet__name {
+ color: var(--blue);
+ font-size: 12px;
+ width: 60px;
+ margin: 6px 0;
+}
+
+.planet__image {
+ height: 22px;
+}
+
+.planet__image,
+.planet__name {
+ padding-right: 6px;
+}
+
+.planet__speed {
+ -webkit-appearance: none;
+ appearance: none;
+ height: 4px;
+ outline: none;
+ background: var(--blue);
+ border-radius: 2px;
+ direction: rtl;
+}
+
+.planet__speed::-webkit-slider-thumb {
+ -webkit-appearance: none;
+ appearance: none;
+ width: 16px;
+ height: 16px;
+ background: #19b5fe;
+ border-radius: 50%;
+ cursor: pointer;
+ transition: all 0.3s linear;
+}
+
+.sun,
+.planet {
+ position: absolute;
+ top: 50%;
+ left: 50%;
+ transform: translate(-50%, -50%);
+ border-radius: 50%;
+}
+
+.sun {
+ width: 60px;
+ height: 60px;
+ animation: rotate 60s infinite linear;
+}
+
+.sun__img {
+ width: 100%;
+}
+
+.planet {
+ border: 1px solid var(--blue);
+ animation-name: rotate;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+
+.planet-1 {
+ width: 110px;
+ height: 110px;
+ animation-duration: 30s;
+}
+
+.planet-2 {
+ width: 220px;
+ height: 220px;
+ animation-duration: 40s;
+}
+
+.planet-3 {
+ width: 360px;
+ height: 360px;
+ animation-duration: 50s;
+}
+
+.planet__img {
+ position: absolute;
+ top: 50%;
+ left: 0;
+ transform: translate(-50%, -50%);
+ animation-name: rotate;
+ animation-iteration-count: infinite;
+ animation-timing-function: linear;
+}
+
+.planet__img-1 {
+ width: 30px;
+ animation-duration: 20s;
+}
+
+.planet__img-2 {
+ width: 46px;
+ animation-duration: 30s;
+}
+
+.planet__img-3 {
+ width: 38px;
+ animation-duration: 40s;
+}
+
+.satellite {
+ width: 70px;
+ height: 70px;
+ border-radius: 50%;
+ position: absolute;
+ left: 0;
+ top: 50%;
+ transform: translateY(-50%);
+ animation: rotate 5s infinite linear;
+}
+
+.satellite__img {
+ width: 16px;
+}
+
+.container {
+ width: 100vw;
+ height: 100vh;
+ position: relative;
+}
+
+@media screen and (max-width: 600px) {
+ .solar-system__container {
+  width: 100%;
+ }
+
+ .container {
+ }
+}
+
+@keyframes rotate {
+ from {
+  transform: translate(-50%, -50%) rotate(0deg);
+ }
+ to {
+  transform: translate(-50%, -50%) rotate(360deg);
+ }
+}
