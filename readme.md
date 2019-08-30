@@ -1,3 +1,3 @@
 # Solar system
 
-![alt text](https://github.com/piotrglodek/solar-system/blob/master/img/solar-system.png  "Solar system")
+![alt text](https://github.com/piotrglodek/solar-system/blob/master/images/solar-system.png  "Solar system")
