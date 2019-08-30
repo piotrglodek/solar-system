@@ -8,6 +8,7 @@
 body {
  margin: 0;
  font-family: 'Poppins', sans-serif;
+ background: url('images/stardust.png') repeat;
 }
 
 :root {
@@ -15,9 +16,7 @@ body {
 }
 
 .solar-system {
- background: url('images/stardust.png') repeat;
- width: 100vw;
- height: 100vh;
+ 
 }
 
 .solar-system__container {
@@ -172,8 +171,45 @@ body {
   width: 100%;
  }
 
- .container {
+ .container{
+  margin-top: 60px;
  }
+
+ .sun{
+  width: 40px;
+  height: 40px;
+ }
+
+ .planet-1{
+  width: 70px;
+  height: 70px;
+ }
+
+ .planet-2{
+  width: 120px;
+  height: 120px;
+ }
+
+ .planet-3{
+  width: 190px;
+  height: 190px;
+ }
+
+ .planet__img-1{
+  width: 20px;
+ }
+ .planet__img-2{
+  width: 30px;
+ }
+ .planet__img-3{
+  width: 24px;
+ }
+
+ .satellite{
+  width: 50px;
+  height: 50px;
+ }
+
 }
 
 @keyframes rotate {
